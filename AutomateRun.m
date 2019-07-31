@@ -1,5 +1,5 @@
 
-n [DATA] = AutomateRun(row, file)
+function [DATA] = AutomateRun(row, file)
     tic
     inputObject = matfile(file);
     DATA=inputObject.DATA(1,row);
