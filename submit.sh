@@ -24,7 +24,7 @@ ls ${main_input_mat} > /dev/null    # Check input file exists
                                     # "> /dev/null" re-directs the standard output to null.
                                     # This is just saying "Don't print the outcome (unless an error)"
 
-echo "version 1.1"                  # This is a good way to keep track of edits
+echo "version 1.3"                  # This is a good way to keep track of edits
 
 # If these directories don't exist, make them.
 mkdir -pv ${root_stock_dir} ${root_log_dir} ${root_output_dir} 
