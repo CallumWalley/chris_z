@@ -1,7 +1,9 @@
 
-n [DATA] = AutomateRun(row)
-    inputObject = matfile('FBUrow.mat');
+n [DATA] = AutomateRun(row, file)
+    tic
+    inputObject = matfile(file);
     DATA=inputObject.DATA(1,row);
+    toc
     %% calling the main function
     [LinkBID, LinkASK, RunsBid, RunsAsk] = StrategicRuns_v2(DATA);
     %% repeat the above algorithm with RunsBid & RunsAsk
