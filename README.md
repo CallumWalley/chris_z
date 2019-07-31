@@ -14,5 +14,6 @@
 
 ### Paths
 
-$root_dir/$stock_name/outputs
-$root_dir/$stock_name/logs
+`$root_dir/$stock_name/outputs`
+
+`$root_dir/$stock_name/logs`
