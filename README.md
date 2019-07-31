@@ -10,7 +10,7 @@
    * Time
    * Mem
    * Partition
-5. Save file then `bash submit.sh
+5. Save file then `bash submit.sh`
 
 ### Paths
 
