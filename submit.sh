@@ -60,7 +60,7 @@ cat <<mainEOF > ${bash_file}
 module load MATLAB/2018b
 
 # Add root to path, run function with index then save output 
-matlab -nojvm -r "addpath('${root_dir}'); output_mat=AutomateRun('${main_input_mat}',\${SLURM_ARRAY_TASK_ID}); save('${stock_name}_row-\${SLURM_ARRAY_TASK_ID}.mat', 'output_mat', '-v7.3'); exit;"
+matlab -nojvm -r "addpath('${root_dir}'); output_mat=AutomateRun('${main_input_mat}',\${SLURM_ARRAY_TASK_ID}); save('${root_output_dir}${stock_name}_row-\${SLURM_ARRAY_TASK_ID}.mat', 'output_mat', '-v7.3'); exit;"
 mainEOF
 
 
