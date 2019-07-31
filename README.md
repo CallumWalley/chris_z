@@ -1,7 +1,7 @@
 ## SLURM / MATLAB workflow
 
 
-# Instructions
+### Instructions
 
 1. Open `submit.sh` with text editor.
 2. Set `root_path` to the directory containing your functions.
@@ -12,7 +12,7 @@
   * Partition
 5. Save file then `bash submit.sh
 
-# Paths
+### Paths
 
 $root_dir/$stock_name/outputs
 $root_dir/$stock_name/logs
