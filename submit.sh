@@ -32,7 +32,8 @@ mkdir -pv ${root_stock_dir} ${root_log_dir} ${root_output_dir}
 # Get length of input (a bit hackey. Don't bother trying to understand this bit)
 echo "Reading number of rows..."
 set +e
-matlab -nodisplay -nojvm -r "step1=whos(matfile('FBUTESTING/FBUTESTING.mat')); exit(step1.size(2));" > /dev/null
+module load MATLAB
+matlab -nodisplay -nojvm -r "step1=whos(matfile('${main_input_mat}')); exit(step1.size(2));" > /dev/null
 input_count=${?}
 set -e
 echo "Done!"
